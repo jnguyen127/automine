@@ -97,12 +97,10 @@ function placeTorches()
             i = i + 1
         end
     end
-    
 end
 
 -- Main Code --
 detectD()
-j = 0
 while 1
 do
     ClearLeftToRight()
