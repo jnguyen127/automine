@@ -20,10 +20,10 @@ function digF20(j)
     for i = 0, 18
     do  
         detectF()
+        detectD()
         if i % 5 == 0 and j % 5 == 0 then 
             placeTorches()
         end
-        detectD()
     end
 end
 
