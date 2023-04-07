@@ -33,6 +33,7 @@ function goForwardR(j)
     digF20(j)
     turtle.turnRight()
     detectF()
+    detectD()
     turtle.turnRight()
 end
 
@@ -41,6 +42,7 @@ function goForwardL(j)
     digF20(j)
     turtle.turnLeft()
     detectF()
+    detectD()
     turtle.turnLeft()
 end
 
