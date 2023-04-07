@@ -21,9 +21,6 @@ function digF20()
     do  
         detectF()
         detectD()
-        if i % 5 == 0 then
-            placeTorches()
-        end
     end
 end
 
@@ -44,17 +41,18 @@ function goForwardL()
 end
 
 function ClearLeftToRight()
-    checkFuel()
-    goForwardR()
-    goForwardL()
-    goForwardR()
-    goForwardL()
-    digF20()
-    turtle.turnRight()
-    turtle.turnRight()
-    for i = 0, 18
-    do
-        detectF()
+    i = 0
+    while i < 100000 do
+        checkFuel()
+        if i % 5 == 0 then
+            placeTorches()
+        end
+        goForwardR()
+        goForwardL()
+        goForwardR()
+        goForwardL()
+        turtle.turnRight()
+        turtle.turnRight()
     end
 end
 
