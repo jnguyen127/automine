@@ -12,6 +12,8 @@ function detectD()
     checkFuel()
     if turtle.detectDown() then
         turtle.digDown()
+    end
+    if turtle.detectUp() then
         turtle.digUp()
     end
 end 
