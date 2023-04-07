@@ -27,17 +27,17 @@ function digF20(j)
     end
 end
 
-function goForwardR()
+function goForwardR(j)
     checkFuel()
-    digF20()
+    digF20(j)
     turtle.turnRight()
     detectF()
     turtle.turnRight()
 end
 
-function goForwardL()
+function goForwardL(j)
     checkFuel()
-    digF20()
+    digF20(j)
     turtle.turnLeft()
     detectF()
     turtle.turnLeft()
@@ -46,12 +46,8 @@ end
 function ClearLeftToRight()
     while 1 do
         checkFuel()
-        goForwardR()
-        goForwardL()
-        goForwardR()
-        goForwardL()
-        turtle.turnRight()
-        turtle.turnRight()
+        goForwardR(j)
+        goForwardL(j)
         j = j + 1
     end
 end
