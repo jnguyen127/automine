@@ -103,5 +103,5 @@ end
 detectD()
 while 1
 do
-    ClearLeftToRight()
+--     ClearLeftToRight()
 end
