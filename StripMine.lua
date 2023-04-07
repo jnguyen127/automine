@@ -20,6 +20,7 @@ function digF20()
     for i = 0, 18
     do  
         detectF()
+        detectD()
         if i % 5 == 0 then
             placeTorches()
         end
@@ -103,5 +104,5 @@ end
 detectD()
 while 1
 do
---     ClearLeftToRight()
+    ClearLeftToRight()
 end
