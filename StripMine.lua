@@ -12,6 +12,7 @@ function detectD()
     checkFuel()
     if turtle.detectDown() then
         turtle.digDown()
+        turtle.digUp()
     end
 end 
 
@@ -47,6 +48,7 @@ function ClearLeftToRight()
     while 1 do
         checkFuel()
         goForwardR(j)
+        j = j + 1
         goForwardL(j)
         j = j + 1
     end
