@@ -10,11 +10,13 @@ end
 
 function detectD()
     checkFuel()
-    if turtle.detectDown() then
+    while turtle.detectDown() do
         turtle.digDown()
+        sleep(0.5)
     end
-    if turtle.detectUp() then
+    while turtle.detectUp() do
         turtle.digUp()
+        sleep(0.5)
     end
 end 
 
